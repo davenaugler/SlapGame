@@ -1,11 +1,50 @@
 <html>
+
 <head>
 	<title>Slap Object Game</title>
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+		crossorigin="anonymous">
 	<link rel="stylesheet" href="">
-	<link rel="stylesheet" href="">
-	<script src=""></script>
+	<link rel="stylesheet" href="game.css">
+	<script src="game.js"></script>
 </head>
+
 <body>
-	
+	<div id="wrap">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">
+						<!--<img alt="Brand" src="...">-->
+						<div>Slap Game!</div>
+					</a>
+				</div>
+			</div>
+		</nav>
+		<div class="container-fluid">
+			<div class="row text-center">
+				<div class="col-sm-12">
+					<img src="img/stickFigure.png" alt="Responsive image">
+					<div class="dummy text-center">
+						<h1 id="health">100</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer class="footer text-center">
+		<div class="buttons">
+			<button onclick="onSlap()" type="button" class="btn btn-primary btn-lg slapButton">Slap</button>
+			<button onclick="onPunch()" type="button" class="btn btn-primary btn-lg punchButton">Punch</button>
+			<button onclick="onKick()" type="button" class="btn btn-primary btn-lg kickButton">Kick</button>
+			<button onclick="reset()" type="button" class="btn btn-success btn-lg punchButton">Reset</button>
+		</div>
+
+	</footer>
 </body>
+
 </html>
